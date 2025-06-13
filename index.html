@@ -603,32 +603,32 @@
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>
+
+      <script>
+        const modal = document.querySelector("[data-modal]");
+        const openModalBtn = document.querySelector("[data-modal-open]");
+        const closeModalBtn = document.querySelector("[data-modal-close]");
+
+        openModalBtn.addEventListener("click", () => {
+          modal.classList.remove("is-hidden");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+          modal.classList.add("is-hidden");
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            modal.classList.add("is-hidden");
+          }
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.add("is-hidden");
+          }
+        });
+      </script>
     </div>
-
-    <script>
-      const modal = document.querySelector("[data-modal]");
-      const openModalBtn = document.querySelector("[data-modal-open]");
-      const closeModalBtn = document.querySelector("[data-modal-close]");
-
-      openModalBtn.addEventListener("click", () => {
-        modal.classList.remove("is-hidden");
-      });
-
-      closeModalBtn.addEventListener("click", () => {
-        modal.classList.add("is-hidden");
-      });
-
-      window.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          modal.classList.add("is-hidden");
-        }
-      });
-
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.classList.add("is-hidden");
-        }
-      });
-    </script>
   </body>
 </html>
