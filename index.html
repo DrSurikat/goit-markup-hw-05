@@ -500,140 +500,138 @@
           </div>
         </div>
       </footer>
+    </main>
 
-      <!-- Modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <!-- Close Button -->
-          <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!-- Close Button -->
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-          <!-- Title -->
-          <p class="modal-title">
-            Leave your contacts and we will call you back
-          </p>
+        <!-- Title -->
+        <p class="modal-title">Leave your contacts and we will call you back</p>
 
-          <!-- Form -->
-          <form class="modal-form">
-            <!-- Name -->
-            <div class="modal-form-label-wrapper">
-              <label class="modal-label" for="user-name">Name</label>
-              <div class="modal-input-wrapper">
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Your name"
-                  required
-                />
-                <svg class="modal-input-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Phone -->
-            <div class="modal-form-label-wrapper">
-              <label class="modal-label" for="user-phone">Phone</label>
-              <div class="modal-input-wrapper">
-                <input
-                  class="modal-input"
-                  type="tel"
-                  name="user-phone"
-                  id="user-phone"
-                  placeholder="+38 (0__) ___ __ __"
-                  required
-                />
-                <svg class="modal-input-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Email -->
-            <div class="modal-form-label-wrapper">
-              <label class="modal-label" for="user-email">Email</label>
-              <div class="modal-input-wrapper">
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                  placeholder="example@email.com"
-                  required
-                />
-                <svg class="modal-input-icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Comment -->
-            <div class="modal-form-label-wrapper">
-              <label class="modal-label" for="user-comment">Comment</label>
-              <textarea
-                class="modal-textarea"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <!-- Checkbox -->
-            <div class="modal-checkbox-wrapper">
+        <!-- Form -->
+        <form class="modal-form">
+          <!-- Name -->
+          <div class="modal-form-label-wrapper">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-input-wrapper">
               <input
-                class="modal-checkbox visually-hidden"
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
                 required
               />
-              <label class="modal-terms-text" for="user-privacy">
-                <span class="custom-checkbox">
-                  <svg class="checkbox-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a href="#" class="modal-link">Privacy Policy</a>
-              </label>
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </div>
+          </div>
 
-            <!-- Submit -->
-            <button type="submit" class="modal-submit-btn">Send</button>
-          </form>
-        </div>
+          <!-- Phone -->
+          <div class="modal-form-label-wrapper">
+            <label class="modal-label" for="user-phone">Phone</label>
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="+38 (0__) ___ __ __"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="modal-form-label-wrapper">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="example@email.com"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="modal-form-label-wrapper">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="modal-checkbox-wrapper">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              required
+            />
+            <label class="modal-terms-text" for="user-privacy">
+              <span class="custom-checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="modal-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="modal-submit-btn">Send</button>
+        </form>
       </div>
+    </div>
 
-      <script>
-        const modal = document.querySelector("[data-modal]");
-        const openModalBtn = document.querySelector("[data-modal-open]");
-        const closeModalBtn = document.querySelector("[data-modal-close]");
+    <script>
+      const modal = document.querySelector("[data-modal]");
+      const openModalBtn = document.querySelector("[data-modal-open]");
+      const closeModalBtn = document.querySelector("[data-modal-close]");
 
-        openModalBtn.addEventListener("click", () => {
-          modal.classList.remove("is-hidden");
-        });
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.remove("is-hidden");
+      });
 
-        closeModalBtn.addEventListener("click", () => {
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.add("is-hidden");
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
           modal.classList.add("is-hidden");
-        });
+        }
+      });
 
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") {
-            modal.classList.add("is-hidden");
-          }
-        });
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.classList.add("is-hidden");
-          }
-        });
-      </script>
-    </main>
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("is-hidden");
+        }
+      });
+    </script>
   </body>
 </html>
