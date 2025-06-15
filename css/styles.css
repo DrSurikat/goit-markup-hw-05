@@ -669,6 +669,12 @@ body {
   cursor: pointer;
 }
 
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
 .footer-subscribe-icon {
   margin-left: 16px;
 }
