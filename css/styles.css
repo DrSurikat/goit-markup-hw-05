@@ -65,6 +65,7 @@ address {
   --green: #31d0aa;
   --navy-blue: #2e2f42;
   --light-slate: #8e8f99;
+  --accent-color: #4d5ae5;
 
   /* Secondary Colors */
   --slate: #434455;
@@ -669,36 +670,6 @@ body {
   cursor: pointer;
 }
 
-.modal-submit {
-  display: block;
-  min-width: 165px; /* ширина кнопки */
-  height: 40px; /* висота кнопки */
-  padding: 8px 16px; /* внутрішні відступи */
-  justify-content: center; /* вирівнювання контенту */
-  background-color: #4d5ae5; /* початковий колір */
-  border: none;
-  border-radius: 4px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-submit-icon {
-  fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-submit:hover,
-.modal-submit:focus {
-  background-color: #404bbf;
-  border: none;
-}
-
 .footer-subscribe-icon {
   margin-left: 16px;
 }
@@ -926,4 +897,34 @@ body {
 .checkbox-link {
   color: #4d5ae5;
   text-decoration: underline;
+}
+
+.modal-submit {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit:hover,
+.modal-submit:focus {
+  background-color: #404bbf;
+  border: none;
 }
