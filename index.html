@@ -477,22 +477,23 @@
             </ul>
           </div>
 
-          <!-- Subscribe Form -->
-          <div class="footer-subscribe">
-            <p class="footer-subscribe-title">Subscribe</p>
-            <form class="footer-form">
-              <label class="footer-form-label">
+          <!-- subscribe -->
+          <div class="footer-subscribe-wrapper">
+            <p class="footer-subscribe-text">Subscribe</p>
+            <form class="footer-subscribe-form">
+              <label class="footer-subscribe-label">
                 <input
+                  class="footer-subscribe-input"
                   type="email"
-                  name="email"
-                  class="footer-input"
+                  name="subscribe-email"
                   placeholder="E-mail"
                   required
                 />
               </label>
-              <button type="submit" class="footer-form-btn">
+              <button type="submit" class="footer-subscribe-button">
                 Subscribe
-                <svg class="footer-btn-icon" width="24" height="24">
+                <!-- Іконка -->
+                <svg class="footer-subscribe-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -603,32 +604,32 @@
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>
-
-      <script>
-        const modal = document.querySelector("[data-modal]");
-        const openModalBtn = document.querySelector("[data-modal-open]");
-        const closeModalBtn = document.querySelector("[data-modal-close]");
-
-        openModalBtn.addEventListener("click", () => {
-          modal.classList.remove("is-hidden");
-        });
-
-        closeModalBtn.addEventListener("click", () => {
-          modal.classList.add("is-hidden");
-        });
-
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") {
-            modal.classList.add("is-hidden");
-          }
-        });
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.classList.add("is-hidden");
-          }
-        });
-      </script>
     </div>
+
+    <script>
+      const modal = document.querySelector("[data-modal]");
+      const openModalBtn = document.querySelector("[data-modal-open]");
+      const closeModalBtn = document.querySelector("[data-modal-close]");
+
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.remove("is-hidden");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.add("is-hidden");
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          modal.classList.add("is-hidden");
+        }
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("is-hidden");
+        }
+      });
+    </script>
   </body>
 </html>
