@@ -506,7 +506,7 @@
     <!-- Після footer -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -595,7 +595,12 @@
           </div>
 
           <!-- Submit -->
-          <button type="submit" class="modal-form-submit">Send</button>
+          <button type="submit" class="modal-submit">
+            Send
+            <svg class="modal-submit-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>

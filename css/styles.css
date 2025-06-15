@@ -669,8 +669,36 @@ body {
   cursor: pointer;
 }
 
-.modal-submit-button:hover,
-.modal-submit-button:focus {
+.modal-submit {
+  display: block;
+  min-width: 165px; /* вимога автотесту */
+  height: 40px; /* висота кнопки */
+  padding: 8px 16px; /* внутрішні відступи */
+  justify-content: center; /* вирівнювання контенту */
+  background-color: #4d5ae5; /* початковий колір */
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-icon {
+  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit:hover .modal-submit-icon,
+.modal-submit:focus .modal-submit-icon {
+  fill: #ffffff;
+}
+
+.modal-submit:hover,
+.modal-submit:focus {
   background-color: #404bbf;
   border: none;
 }
