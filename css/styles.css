@@ -65,6 +65,7 @@ address {
   --green: #31d0aa;
   --navy-blue: #2e2f42;
   --light-slate: #8e8f99;
+  --light-color: #f4f4fd;
   --accent-color: #4d5ae5;
 
   /* Secondary Colors */
@@ -791,7 +792,7 @@ body {
 }
 
 /* Зміна кольору іконки при фокусі на input */
-.modal-input:focus {
+.modal-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 
@@ -845,6 +846,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-field-comment {
+  margin-bottom: 16px;
+}
+
 .modal-textarea:focus {
   border-color: #4d5ae5;
 }
@@ -867,6 +872,11 @@ body {
   color: #8e8f99;
 }
 
+.modal-checkbox-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .custom-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -886,7 +896,7 @@ body {
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: var(--light-color);
 }
 
 .checkbox-icon {
