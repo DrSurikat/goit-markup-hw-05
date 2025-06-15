@@ -503,23 +503,19 @@
       </footer>
     </main>
 
-    <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Після footer -->
+    <div class="backdrop is-hidden">
       <div class="modal">
-        <!-- Кнопка закриття -->
-        <button type="button" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <!-- Заголовок -->
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <!-- Форма -->
         <form class="modal-form">
-          <!-- Name -->
-          <div class="modal-form-field">
+          <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-wrapper">
               <input
@@ -527,16 +523,14 @@
                 type="text"
                 name="user-name"
                 id="user-name"
-                placeholder="Your name"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
 
-          <!-- Phone -->
-          <div class="modal-form-field">
+          <div class="modal-field">
             <label class="modal-label" for="user-phone">Phone</label>
             <div class="modal-input-wrapper">
               <input
@@ -544,16 +538,14 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
-                placeholder="+38 (0__) ___ __ __"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <!-- Email -->
-          <div class="modal-form-field">
+          <div class="modal-field">
             <label class="modal-label" for="user-email">Email</label>
             <div class="modal-input-wrapper">
               <input
@@ -561,16 +553,14 @@
                 type="email"
                 name="user-email"
                 id="user-email"
-                placeholder="example@email.com"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
-          <!-- Comment -->
-          <div class="modal-form-field">
+          <div class="modal-field">
             <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
@@ -580,28 +570,26 @@
             ></textarea>
           </div>
 
-          <!-- Checkbox -->
-          <div class="modal-checkbox-container">
+          <div class="modal-checkbox-wrap">
             <input
               class="modal-checkbox visually-hidden"
               type="checkbox"
-              name="user-privacy"
               id="user-privacy"
+              name="user-privacy"
               value="true"
             />
-            <label class="modal-terms-text" for="user-privacy">
+            <label class="modal-checkbox-label" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="modal-policy-link" href="#">Privacy Policy</a>
+              <a href="#" class="checkbox-link">Privacy Policy</a>
             </label>
           </div>
 
-          <!-- Submit Button -->
-          <button type="submit" class="modal-submit-btn">Send</button>
+          <button type="submit" class="modal-submit-button">Send</button>
         </form>
       </div>
     </div>
