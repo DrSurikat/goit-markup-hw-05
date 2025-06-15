@@ -59,7 +59,7 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="hero-section">
+      <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -506,7 +506,7 @@
     <!-- Після footer -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -515,9 +515,10 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form">
-          <div class="modal-field">
+          <!-- Name -->
+          <div class="modal-input-wrap">
             <label class="modal-label" for="user-name">Name</label>
-            <div class="modal-input-wrapper">
+            <div class="modal-field">
               <input
                 class="modal-input"
                 type="text"
@@ -530,9 +531,10 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <!-- Phone -->
+          <div class="modal-input-wrap">
             <label class="modal-label" for="user-phone">Phone</label>
-            <div class="modal-input-wrapper">
+            <div class="modal-field">
               <input
                 class="modal-input"
                 type="tel"
@@ -545,9 +547,10 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <!-- Email -->
+          <div class="modal-input-wrap">
             <label class="modal-label" for="user-email">Email</label>
-            <div class="modal-input-wrapper">
+            <div class="modal-field">
               <input
                 class="modal-input"
                 type="email"
@@ -560,7 +563,8 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <!-- Comment -->
+          <div class="modal-field-comment">
             <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
@@ -570,54 +574,70 @@
             ></textarea>
           </div>
 
-          <div class="modal-checkbox-wrap">
+          <!-- Checkbox -->
+          <div class="modal-form-checkbox-wrapper">
             <input
-              class="modal-checkbox visually-hidden"
+              class="modal-form-checkbox visually-hidden"
               type="checkbox"
               id="user-privacy"
               name="user-privacy"
               value="true"
             />
-            <label class="modal-checkbox-label" for="user-privacy">
-              <span class="custom-checkbox">
-                <svg class="checkbox-icon" width="10" height="8">
+            <label class="modal-form-checkbox-label" for="user-privacy">
+              <span class="modal-form-checkbox-box">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="#" class="checkbox-link">Privacy Policy</a>
+              <a href="#" class="modal-form-checkbox-link">Privacy Policy</a>
             </label>
           </div>
 
-          <button type="submit" class="modal-submit-button">Send</button>
+          <!-- Submit -->
+          <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
     </div>
 
     <script>
-      const modal = document.querySelector("[data-modal]");
+      // Отримуємо DOM-елементи
       const openModalBtn = document.querySelector("[data-modal-open]");
       const closeModalBtn = document.querySelector("[data-modal-close]");
+      const backdrop = document.querySelector(".backdrop");
 
-      openModalBtn.addEventListener("click", () => {
-        modal.classList.remove("is-hidden");
-      });
+      // Функція відкриття модального вікна
+      const openModal = () => {
+        backdrop.classList.remove("is-hidden");
+        document.body.style.overflow = "hidden"; // Заборонити прокрутку фону
+        window.addEventListener("keydown", handleEscPress);
+      };
 
-      closeModalBtn.addEventListener("click", () => {
-        modal.classList.add("is-hidden");
-      });
+      // Функція закриття модального вікна
+      const closeModal = () => {
+        backdrop.classList.add("is-hidden");
+        document.body.style.overflow = ""; // Відновити прокрутку
+        window.removeEventListener("keydown", handleEscPress);
+      };
 
-      window.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          modal.classList.add("is-hidden");
+      // Закриття модалки при натисканні клавіші Esc
+      const handleEscPress = (event) => {
+        if (event.key === "Escape") {
+          closeModal();
         }
-      });
+      };
 
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.classList.add("is-hidden");
+      // Закриття модалки при кліку на backdrop
+      const handleBackdropClick = (event) => {
+        if (event.target === backdrop) {
+          closeModal();
         }
-      });
+      };
+
+      // Додаємо слухачі подій
+      openModalBtn.addEventListener("click", openModal);
+      closeModalBtn.addEventListener("click", closeModal);
+      backdrop.addEventListener("click", handleBackdropClick);
     </script>
   </body>
 </html>
