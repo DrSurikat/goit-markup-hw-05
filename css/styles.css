@@ -62,10 +62,6 @@ address {
   --font-main: "Roboto", sans-serif;
   --font-logo: "Raleway", sans-serif;
 
-  /* Colors */
-  --ocean: #404bbf;
-  --cloud: #f4f4fd;
-
   /* Transition */
   --transition-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -867,9 +863,9 @@ address {
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   border: none;
-  fill: var(--cloud);
+  fill: #f4f4fd;
 }
 
 .checkbox-icon {
