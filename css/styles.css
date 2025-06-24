@@ -10,8 +10,8 @@
 body {
   margin: 0;
   font-family: var(--font-main);
-  color: var(--slate);
-  background-color: var(--white);
+  color: #434455;
+  background-color: #ffffff;
 }
 
 h1,
@@ -58,24 +58,6 @@ address {
 
 /* === :root змінні === */
 :root {
-  /* Primary Colors */
-  --iris: #4d5ae5;
-  --ocean: #404bbf;
-  --navy-blue: #2e2f42;
-  --green: #31d0aa;
-
-  /* Secondary Colors */
-  --slate: #434455;
-  --light-slate: #8e8f99;
-  --cornflower: #e7e9fc;
-  --cloud: #f4f4fd;
-  
-  /* Accent & Other */
-  --white: #ffffff;
-  --dairy: #fcfcfc;
-  --accent-color: #4d5ae5; /* Same as --iris, can be an alias or for specific semantic purpose */
-  --light-color: #f4f4fd; /* Same as --cloud */
-
   /* Typography */
   --font-main: "Roboto", sans-serif;
   --font-logo: "Raleway", sans-serif;
@@ -100,7 +82,7 @@ address {
 }
 
 .section-title {
-  color: var(--navy-blue);
+  color: #2e2f42;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
@@ -123,7 +105,7 @@ address {
 /* ===== HEADER ===== */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  background-color: var(--white);
+  background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -329,7 +311,7 @@ address {
 
 .features-subtitle {
   margin-bottom: 8px;
-  color: var(--navyblue, #2e2f42);
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -337,7 +319,7 @@ address {
 }
 
 .features-text {
-  color: var(--slate, #434455);
+  color: #434455;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -351,7 +333,7 @@ address {
 }
 
 .team-title {
-  color: var(--navyblue);
+  color: #2e2f42;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
@@ -382,7 +364,7 @@ address {
 }
 
 .team-member-name {
-  color: var(--navyblue);
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -391,7 +373,7 @@ address {
 }
 
 .team-member-position {
-  color: var(--slate);
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -419,7 +401,7 @@ address {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--iris);
+  background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -430,7 +412,7 @@ address {
 }
 
 .social-icon {
-  fill: var(--cloud);
+  fill: #f4f4fd;
   width: 16px;
   height: 16px;
 }
@@ -453,7 +435,7 @@ address {
 
 .portfolio-card {
   width: 360px;
-  background-color: var(--white);
+  background-color: #ffffff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -482,7 +464,7 @@ address {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
-  color: var(--cloud-text-color, #f4f4fd);
+  color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -508,7 +490,7 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
+  color: #2e2f42;
 }
 
 .portfolio-type {
@@ -516,14 +498,14 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--slate);
+  color: #434455;
 }
 
 /* === Footer === */
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  color: var(--cloud);
+  color: #f4f4fd;
 }
 
 .footer-container {
@@ -544,16 +526,16 @@ address {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--iris);
+  color: #4d5ae5;
   margin-bottom: 16px;
 }
 
 .footer-logo-accent {
-  color: var(--cloud);
+  color: #f4f4fd;
 }
 
 .footer-text {
-  color: var(--cloud);
+  color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -571,7 +553,7 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--white);
+  color: #ffffff;
 }
 
 .footer-socials-list {
@@ -593,18 +575,18 @@ address {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--iris);
+  background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color var(--transition-main);
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: var(--green);
+  background-color: #31d0aa;
 }
 
 .footer-socials-icon {
-  fill: var(--cloud);
+  fill: #f4f4fd;
 }
 
 .footer-subscribe-wrapper {
@@ -652,8 +634,8 @@ address {
   height: 40px;
   border: none;
   border-radius: 4px;
-  background-color: var(--iris);
-  color: var(--white);
+  background-color: #4d5ae5;
+  color: #ffffff;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -662,12 +644,12 @@ address {
 
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
-  background-color: var(--ocean);
+  background-color: #404bbf;
 }
 
 .footer-subscribe-icon {
   margin-left: 16px;
-  fill: var(--white);
+  fill: #ffffff;
 }
 
 /* === backdrop === */
@@ -723,7 +705,7 @@ address {
   height: 24px;
   padding: 0;
   border-radius: 50%;
-  background-color: var(--cornflower);
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color var(--transition-main),
     border var(--transition-main);
@@ -731,13 +713,13 @@ address {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   border: none;
 }
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-  fill: var(--white);
+  fill: #ffffff;
 }
 
 .modal-close-icon {
@@ -808,7 +790,7 @@ address {
 
 .modal-input:focus {
   outline: none;
-  border-color: var(--iris);
+  border-color: #4d5ae5;
 }
 
 .modal-textarea {
@@ -833,7 +815,7 @@ address {
 
 .modal-textarea:focus {
   outline: none;
-  border-color: var(--iris);
+  border-color: #4d5ae5;
 }
 
 .modal-checkbox-wrap {
@@ -849,13 +831,13 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--light-slate);
+  color: #8e8f99;
   display: flex;
   align-items: center;
 }
 
 .modal-checkbox-link {
-  color: var(--iris);
+  color: #4d5ae5;
   text-decoration: underline;
 }
 
@@ -874,9 +856,9 @@ address {
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   border: none;
-  fill: var(--cloud);
+  fill: #f4f4fd;
 }
 
 .checkbox-icon {
@@ -888,7 +870,7 @@ address {
 }
 
 .checkbox-link {
-  color: var(--iris);
+  color: #4d5ae5;
   text-decoration: underline;
 }
 
@@ -918,6 +900,6 @@ address {
 
 .modal-submit:hover,
 .modal-submit:focus {
-  background-color: var(--white);
+  background-color: #404bbf;
   border: none;
 }
