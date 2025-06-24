@@ -69,7 +69,7 @@ address {
   --color-primary: #4d5ae5;
   --color-primary-dark: #404bbf;
   --color-bg-dark: #2e2f42;
-  --color-bg-light: #ffffff;
+  --color-bg-light: #fcfcfc;
   --color-bg-grey: #f4f4fd;
   --color-border: #e7e9fc;
   --color-text-main: #434455;
@@ -787,6 +787,7 @@ address {
 }
 
 .modal-icon {
+  display: inline-flex;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -939,5 +940,5 @@ address {
 
 .modal-submit:hover .modal-submit-icon,
 .modal-submit:focus .modal-submit-icon {
-  fill: var(--color-text-light);
+  fill: #ffffff;
 }
