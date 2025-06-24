@@ -64,6 +64,22 @@ address {
 
   /* Transition */
   --transition-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === Colors === */
+  --color-primary: #4d5ae5;
+  --color-primary-dark: #404bbf;
+  --color-bg-dark: #2e2f42;
+  --color-bg-light: #fcfcfc;
+  --color-bg-grey: #f4f4fd;
+  --color-border: #e7e9fc;
+  --color-text-main: #434455;
+  --color-text-light: #f4f4fd;
+  --color-text-grey: #8e8f99;
+  --color-accent: #2e2f42;
+  --color-checkbox-checked: #404bbf;
+  --color-checkbox-bg: #f4f4fd;
+  --color-modal-border: rgba(46, 47, 66, 0.4);
+  --color-modal-shadow: rgba(0, 0, 0, 0.14);
 }
 
 /* === Базові стилі === */
@@ -658,7 +674,7 @@ address {
   fill: #ffffff;
 }
 
-/* === backdrop === */
+/* === Modal Backdrop === */
 .backdrop {
   position: fixed;
   top: 0;
@@ -685,6 +701,7 @@ address {
   pointer-events: none;
 }
 
+/* === Modal Window === */
 .modal {
   position: absolute;
   top: 50%;
@@ -692,7 +709,7 @@ address {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  background: #fcfcfc;
+  background: var(--color-bg-light);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -700,6 +717,7 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* === Modal Close Button === */
 .modal-close-button {
   position: absolute;
   top: 24px;
@@ -711,7 +729,7 @@ address {
   height: 24px;
   padding: 0;
   border-radius: 50%;
-  background-color: #e7e9fc;
+  background-color: var(--color-border);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color var(--transition-main),
     border var(--transition-main);
@@ -719,32 +737,38 @@ address {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: #404bbf;
+  background-color: var(--color-primary-dark);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
   border: none;
 }
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-  fill: #ffffff;
+  fill: var(--color-text-light);
 }
 
 .modal-close-icon {
   width: 8px;
   height: 8px;
-  fill: #2e2f42;
+  fill: var(--color-accent);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* === Modal Title === */
 .modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-accent);
   margin-bottom: 16px;
 }
 
+/* === Modal Form Fields === */
 .modal-field {
   margin-bottom: 8px;
 }
@@ -755,7 +779,7 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--color-text-grey);
 }
 
 .modal-input-wrapper {
@@ -769,14 +793,14 @@ address {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  fill: #2e2f42;
+  fill: var(--color-accent);
   pointer-events: none;
   transition: fill var(--transition-main);
 }
 
 /* Зміна кольору іконки при фокусі на input */
 .modal-input:focus + .modal-icon {
-  fill: #4d5ae5;
+  fill: var(--color-primary);
 }
 
 .modal-input {
@@ -785,18 +809,18 @@ address {
   padding-left: 38px;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--color-modal-border);
   outline: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: var(--color-accent);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
   outline: none;
-  border-color: #4d5ae5;
+  border-color: var(--color-primary);
 }
 
 .modal-textarea {
@@ -805,14 +829,14 @@ address {
   height: 120px;
   padding: 8px 16px;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--color-modal-border);
   background-color: transparent;
   resize: none;
   outline: transparent;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--color-modal-border);
   transition: border-color var(--transition-main);
 }
 
@@ -822,9 +846,10 @@ address {
 
 .modal-textarea:focus {
   outline: none;
-  border-color: #4d5ae5;
+  border-color: var(--color-primary);
 }
 
+/* === Modal Checkbox === */
 .modal-checkbox-wrap {
   margin-bottom: 24px;
 }
@@ -838,13 +863,13 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--color-text-grey);
   display: flex;
   align-items: center;
 }
 
 .modal-checkbox-link {
-  color: #4d5ae5;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
@@ -855,7 +880,7 @@ address {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--color-modal-border);
   margin-right: 8px;
   fill: transparent;
   transition: background-color var(--transition-main),
@@ -863,9 +888,9 @@ address {
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
-  background-color: #404bbf;
+  background-color: var(--color-checkbox-checked);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--color-checkbox-bg);
 }
 
 .checkbox-icon {
@@ -877,10 +902,11 @@ address {
 }
 
 .checkbox-link {
-  color: #4d5ae5;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
+/* === Modal Submit Button === */
 .modal-submit {
   display: block;
   min-width: 169px;
@@ -889,8 +915,8 @@ address {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -901,17 +927,17 @@ address {
 }
 
 .modal-submit-icon {
-  fill: #ffffff;
+  fill: var(--color-text-light);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit:hover,
 .modal-submit:focus {
-  background-color: #404bbf;
+  background-color: var(--color-primary-dark);
   border: none;
 }
 
 .modal-submit:hover .modal-submit-icon,
 .modal-submit:focus .modal-submit-icon {
-  fill: #ffffff;
+  fill: var(--color-text-light);
 }
