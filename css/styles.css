@@ -763,7 +763,7 @@ address {
 }
 
 .modal-close-icon:hover {
-  fill: var(--color-primary-dark);
+  fill: var(---color-text-light);
   border: none;
 }
 
