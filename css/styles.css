@@ -735,6 +735,13 @@ address {
     border var(--transition-main);
 }
 
+.modal-close-icon {
+  width: 8px;
+  height: 8px;
+  fill: var(--color-accent);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close-button:hover,
 .modal-close-button:focus {
   border: none;
@@ -742,14 +749,7 @@ address {
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-  fill: var(--color-text-light);
-}
-
-.modal-close-icon {
-  width: 8px;
-  height: 8px;
-  fill: var(--color-accent);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--color-primary-dark);
 }
 
 /* === Modal Title === */
