@@ -850,7 +850,7 @@ address {
 
 .modal-textarea:focus {
   outline: none;
-  border-color: var(--iris);
+  border-color: #4D5AE5;
 }
 
 /* === Modal Checkbox === */
@@ -879,6 +879,7 @@ address {
 
 .custom-checkbox {
   display: inline-flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 16px;
