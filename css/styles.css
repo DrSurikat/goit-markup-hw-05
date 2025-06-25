@@ -745,13 +745,6 @@ address {
     border var(--transition-main);
 }
 
-.modal-close-icon {
-  width: 8px;
-  height: 8px;
-  fill: var(--color-accent);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal-close-button:hover {
   background-color: var(--color-primary-dark);
   border: none;
@@ -760,6 +753,13 @@ address {
 .modal-close-button:focus {
   background-color: var(--color-primary-dark);
   border: none;
+}
+
+.modal-close-icon {
+  width: 8px;
+  height: 8px;
+  fill: var(--color-accent);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon:hover {
@@ -836,7 +836,7 @@ address {
 
 .modal-input:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: #4D5AE5;
 }
 
 .modal-textarea {
