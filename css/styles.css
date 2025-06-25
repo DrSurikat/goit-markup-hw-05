@@ -744,12 +744,13 @@ address {
 
 .modal-close-button:hover,
 .modal-close-button:focus {
+  background-color: var(--color-primary-dark);
   border: none;
 }
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-  fill: var(--color-primary-dark);
+  fill: var(--color-text-light);
 }
 
 /* === Modal Title === */
