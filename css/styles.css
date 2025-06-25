@@ -894,6 +894,9 @@ address {
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   background-color: var(--ocean);
+}
+
+.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   border: none;
 }
 
@@ -903,6 +906,8 @@ address {
 }
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
   opacity: 1;
+}
+.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
   stroke: var(--cloud);
 }
 
