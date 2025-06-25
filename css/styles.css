@@ -762,8 +762,13 @@ address {
   border: none;
 }
 
-.modal-close-button:hover .modal-close-icon,
-.modal-close-button:focus .modal-close-icon {
+.modal-close-icon:hover {
+  fill: var(--color-primary-dark);
+  border: none;
+}
+
+.modal-close-icon:focus {
+  border: none;
   fill: var(--color-text-light);
 }
 
