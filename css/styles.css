@@ -862,7 +862,7 @@ address {
 
 .modal-textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: #4D5AE5;
 }
 
 /* === Modal Checkbox === */
