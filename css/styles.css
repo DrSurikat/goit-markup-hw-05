@@ -230,7 +230,7 @@ address {
       var(--grey, rgba(46, 47, 66, 0.7)),
       var(--grey, rgba(46, 47, 66, 0.7))
     ),
-    url("../images/people-office.jpg");
+    url("../images/img-name.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -903,7 +903,6 @@ address {
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   background-color: var(--ocean);
   border: none;
-  fill: var(--cloud);
 }
 
 .checkbox-icon {
@@ -912,6 +911,7 @@ address {
 }
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
   opacity: 1;
+  stroke: var(--cloud);
 }
 
 .checkbox-link {

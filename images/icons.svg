@@ -69,7 +69,7 @@
             <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
         </symbol>
         <symbol id="icon-checkbox-checked" viewBox="0 0 10 8">
-            <polyline points="1 4.5 4 7 9 1" stroke="#404BBF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="1 4.5 4 7 9 1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
     </defs>
 </svg>
