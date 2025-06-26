@@ -947,10 +947,3 @@ address {
 .modal-submit:focus .modal-submit-icon {
   fill: #ffffff;
 }
-
-/* === Checkbox for alternative modal markup === */
-.input-checkbox-modal:checked + .label-accept-privacy .span-icon-checkbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
