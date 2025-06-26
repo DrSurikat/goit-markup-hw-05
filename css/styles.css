@@ -684,7 +684,7 @@ address {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--navy-blue-modal);
+  background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
@@ -712,11 +712,11 @@ address {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  background: var(--dairy);
+  background: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 72px 24px 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -732,32 +732,29 @@ address {
   height: 24px;
   padding: 0;
   border-radius: 50%;
-  background-color: var(--cornflower);
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color var(--transition-main),
-    border var(--transition-main);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover {
-  background-color: var(--ocean);
-  border: none;
-}
-
+.modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   border: none;
 }
 
 .modal-close-icon {
   width: 8px;
   height: 8px;
-  fill: var(--navy-blue);
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
-  fill: var(--white);
+  fill: #ffffff;
 }
 
 /* === Modal Title === */
@@ -894,9 +891,6 @@ address {
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   background-color: var(--ocean);
-}
-
-.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
   border: none;
 }
 
@@ -906,8 +900,6 @@ address {
 }
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
   opacity: 1;
-}
-.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
   stroke: var(--cloud);
 }
 
@@ -954,4 +946,11 @@ address {
 .modal-submit:hover .modal-submit-icon,
 .modal-submit:focus .modal-submit-icon {
   fill: #ffffff;
+}
+
+/* === Checkbox for alternative modal markup === */
+.input-checkbox-modal:checked + .label-accept-privacy .span-icon-checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
