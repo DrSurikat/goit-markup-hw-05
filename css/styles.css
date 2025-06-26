@@ -874,7 +874,7 @@ address {
   text-decoration: underline;
 }
 
-.custom-checkbox {
+.span-icon-checkbox {
   display: inline-flex;
   position: relative;
   align-items: center;
@@ -889,7 +889,7 @@ address {
     border var(--transition-main), fill var(--transition-main);
 }
 
-.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
+.modal-checkbox:checked + .modal-checkbox-label .span-icon-checkbox {
   background-color: var(--ocean);
   border: none;
 }
@@ -898,7 +898,7 @@ address {
   opacity: 0;
   transition: opacity var(--transition-main);
 }
-.modal-checkbox:checked + .modal-checkbox-label .custom-checkbox .checkbox-icon {
+.modal-checkbox:checked + .modal-checkbox-label .span-icon-checkbox .checkbox-icon {
   opacity: 1;
   stroke: var(--cloud);
 }
